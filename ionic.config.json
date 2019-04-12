@@ -1,5 +1,7 @@
 {
   "name": "AnimUniverse",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

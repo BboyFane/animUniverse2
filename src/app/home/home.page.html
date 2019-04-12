@@ -1,14 +1,40 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="bg-thime"><!-- header -->
+    <div class="ion-padding">
+      <div class="logo" style="text-align: center;">
+        <img src="assets/imgs/logo.png" style="max-width: 90%;">
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class="form"><!-- form -->
+    <ion-item>
+      <ion-label floating>Nom d'utilisateur / Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <br/>
+    <ion-row><!-- connection w/ fb or google -->
+      <ion-col col-6 style="text-align: center;">
+        <ion-button (click)="goLoginFb()" style="width: 60%;">Facebook</ion-button><br>
+      </ion-col>
+      <ion-col col-6 style="text-align: center;">
+        <ion-button (click)="goLoginG()" style="width: 60%;">Google</ion-button><br>
+      </ion-col>
+      <p> {{ username }} </p>
+    <!-- <p> {{ theData }} </p> -->
+    </ion-row>
   </div>
 </ion-content>
